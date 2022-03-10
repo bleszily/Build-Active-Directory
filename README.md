@@ -1,8 +1,6 @@
 EXAMPLE
 
-. .\Invoke-PopulateAD.ps1
-
-         Or
+. .\Invoke-PopulateAD.ps1  or
 
 Import-Module .\Invoke-PopulateAD.ps1
 
