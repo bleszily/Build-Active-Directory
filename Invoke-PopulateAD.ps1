@@ -1,27 +1,9 @@
 ﻿<#
 ================================================================================================
-    AD Builder Script: PopulateAD.ps1
-
-    Powershell script to build active directory forest and populate AD with random AD objects 
-    including AD users objects, computers objects, groups objects, GPOs and network shares required. 
-    Also adds ASREProast account, kerberoastable account, and misconfigured ACLs to the domain. 
-
-    Also has the option to remove the data added after the test is done and once it is not required.
-
-    Author: Scarred Monk (@ScarredMonk)
-
-================================================================================================
-#>
-
-<#
-.Synopsis
-   This script populates AD lab environment with some interesting stuff to get started.
-.DESCRIPTION
-   The goal of AD Builder is to populate the AD environment with bulk user objects, computer objects, ACLs 
-   and few misconfigurations that help to simulate a real looking AD LAB for attack and defense simulations.
 .EXAMPLE
    Import-Module .\ADBuilder.ps1; Invoke-LoadADObjects -DomainName rootdse.org -LimitUsers 100
    Invoke-UnLoadADObjects -DomainName roootdse.org
+================================================================================================
 #>
 
 Write-Host ""
